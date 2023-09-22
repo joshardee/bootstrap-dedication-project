@@ -15,6 +15,9 @@
     />
     <title>IU Dedication Page</title>
     <style>
+      body {
+        font-family: Times New Roman, Times, serif;
+      }
       section {
         padding: 60px 0;
       }
@@ -22,8 +25,22 @@
         background-image: url(/pictures/iubackground.png);
         background-size: cover;
         background-position: center;
-        color: aqua;
+        color: white;
         padding: 100px 0;
+      }
+      .about-bg-img {
+        background: linear-gradient(
+          to right,
+          rgba(235, 187, 167, 0.5),
+          rgba(207, 199, 248, 0.5)
+        );
+      }
+      .dc-bg-img {
+        background: linear-gradient(
+          to right,
+          rgba(251, 194, 235, 0.5),
+          rgba(166, 193, 238, 0.5)
+        );
       }
     </style>
   </head>
@@ -39,7 +56,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1 class="display-1">Hello World</h1>
+            <h1 class="display-1">Lee Ji-eun</h1>
           </div>
         </div>
       </div>
@@ -47,15 +64,29 @@
 
     <!-- about -->
 
-    <section id="about" class="vh-100">
-      <div class="container"></div>
+    <section id="about" class="about-bg-img">
+      <div class="container-xl bg-white rounded-lg mx-5">
+        <div class="row align-items-center">
+          <div
+            class="rounded-circle overflow-hidden"
+            style="width: 200px; height: 200px"
+          >
+            <img
+              src="/pictures/iuprofile.png"
+              alt="Your Photo"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- discography-->
 
-    <section id="section3" class="vh-100">
+    <section id="discography" class="vh-100 dc-bg-img">
       <div class="container"></div>
     </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
